@@ -5,6 +5,9 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+img {
+  max-width: 100%;
+}
 .container {
   max-width: 1280px;
   margin: auto;
@@ -34,12 +37,17 @@
 }
 .banner-left {
   padding-left: 45px;
+  flex: 1;
 }
 
 .banner h2 {
   font-size: 70px;
   font-weight: 600;
   line-height: 70px;
+}
+
+.banner-right {
+  flex: 1;
 }
 .banner p {
   color: #ffffff;
@@ -124,3 +132,39 @@ border: 2px solid #dd0000
   color: #161616cc;
 }
 
+
+
+/* Laptop/Tab */
+@media (max-width: 992px) {
+
+  /* Container */
+  .container {
+    margin: 0 20px;
+  }
+  
+  /* Banner */
+  .banner h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  /* Upcoming matches */
+  .upcoming-matches {
+    flex-direction: column;
+  }
+  .upcoming-matches-left {
+    flex-direction: row;
+    width: 100%;
+    background-color: transparent;
+  }
+  .upcoming-matches-left > * {
+    flex: 1;
+  }
+  .upcoming-matches-left .btn {
+    border: 1px solid rgb(232, 232, 232);
+  }
+
+  .upcoming-matches-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
