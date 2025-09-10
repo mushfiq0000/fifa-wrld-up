@@ -141,7 +141,7 @@ border: 2px solid #dd0000
   .container {
     margin: 0 20px;
   }
-  
+
   /* Banner */
   .banner h2 {
     font-size: 50px;
@@ -166,5 +166,28 @@ border: 2px solid #dd0000
 
   .upcoming-matches-right {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px 10px;
+  }
+
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  .banner .banner-left {
+    margin-bottom: 50px;
+    padding-left: 0;
+    padding-top: 30px;
+  }
+  .banner .banner-left p {
+    /* max-width: 100%; */
+    margin: 15px auto;
+  }
+  .upcoming-matches-right {
+    grid-template-columns: 1fr;
   }
 }
