@@ -17,7 +17,10 @@
   color: white;
   border: none;
 }
-
+.btn:hover {
+  background-color: #b71c1c;
+  
+}
 /* Custom style */
 
 .banner {
@@ -71,6 +74,11 @@
   background-color: white;
   color: black;
 }
+.upcoming-matches-left .btn:nth-child(1):hover,
+.upcoming-matches-left .btn:nth-child(2):hover {
+  background-color: #dd0000;
+  color: white;
+}
 .upcoming-matches-right {
   flex: 1;
    display: grid;
@@ -97,6 +105,12 @@
   border: 2px solid black;
   padding: 8px 17px;
   margin-top: 10px;
+}
+.upcoming-matches-right .card .btn:hover {
+background-color: #dd0000;
+color: white;
+border: 2px solid #dd0000
+
 }
 .upcoming-matches-right .card h2 {
   margin: 15px 0;
